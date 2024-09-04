@@ -1,21 +1,17 @@
 #include <iostream>
-
-class NumberChecker {
-public:
-    std::string checkEvenOdd(int num) {
-        return (num % 2 == 0) ? "Even" : "Odd";
-    }
-};
-
+using namespace std;
 int main() {
-    NumberChecker checker;
     int number;
 
-    std::cout << "Enter a number: ";
-    std::cin >> number;
+    cout << "Enter a number: ";
+    cin >> number;
+    if(number %2==0){
 
-    std::cout << "The number is " << checker.checkEvenOdd(number) << "." << std::endl;
-
+    cout<<"it is a even num ";
+	}else{
+		cout<<"it is a odd number ";
+	}
+    
     return 0;
 }
 
